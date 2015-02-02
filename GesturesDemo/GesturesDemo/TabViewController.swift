@@ -13,8 +13,15 @@ class TabViewController: UIViewController
 
     @IBOutlet var testView:UIView!
     
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
+        var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
+        leftSwipeGesture.direction = UISwipeGestureRecognizerDirection.Left
+        view.addGestureRecognizer(leftSwipeGesture)
+        
+        var rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
+        rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
+        view.addGestureRecognizer(rightSwipeGesture)
+        
         var tapGesture = UITapGestureRecognizer(target: self, action: "handleSingleTapGesture:")
         testView.addGestureRecognizer(tapGesture)
         
@@ -25,9 +32,7 @@ class TabViewController: UIViewController
  
     }
     
-    
-    func handleSingleTapGesture(tapGestureRecognizer:UITapGestureRecognizer) -> Void
-    {
+    func handleSingleTapGesture(tapGestureRecognizer:UITapGestureRecognizer) -> Void {
         var newWidth: CGFloat = 200.0
         if testView.frame.size.width == newWidth
         {
@@ -39,8 +44,7 @@ class TabViewController: UIViewController
         testView.center = currentCenter
     }
     
-    func handleDoubleTapGesture(tapGestureRecognizer:UITapGestureRecognizer) -> Void
-    {
+    func handleDoubleTapGesture(tapGestureRecognizer:UITapGestureRecognizer) -> Void {
         var newSize = CGSizeMake(200.0, 200.0)
         if  testView.frame.size == newSize
         {
@@ -52,5 +56,16 @@ class TabViewController: UIViewController
         
         testView.frame = CGRectMake(testView.frame.origin.x, testView.frame.origin.y, newSize.width, newSize.height)
         testView.center = currentCenter
+    }
+    
+    func jumpToOtherTab(gestureRecognizer: UISwipeGestureRecognizer) -> Void {
+        if gestureRecognizer.direction == UISwipeGestureRecognizerDirection.Left
+        {
+            tabBarController?.selectedIndex = 1
+        }
+        else
+        {
+            tabBarController?.selectedIndex = 4
+        }
     }
 }
