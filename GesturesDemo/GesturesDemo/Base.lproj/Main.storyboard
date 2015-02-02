@@ -15,9 +15,34 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Gesture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygk-KD-4bT">
+                                <rect key="frame" x="239" y="28" width="122" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="lNK-Zr-S8p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDt-U7-J81">
+                                <rect key="frame" x="16" y="200" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="300" width="200" height="200"/>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ygk-KD-4bT" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="1bC-La-eIG"/>
+                            <constraint firstItem="Ygk-KD-4bT" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="qoo-NB-KuV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tap" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="testView" destination="oDt-U7-J81" id="2GK-e9-kLq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,7 +59,22 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Gesture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK6-Lh-6hl">
+                                <rect key="frame" x="233" y="28" width="135" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="36T-Ri-feU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VK6-Lh-6hl" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="8eP-zu-0uf"/>
+                            <constraint firstItem="VK6-Lh-6hl" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Are-6b-X5a"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Swipe" image="first" id="cPa-gy-q4n"/>
                 </viewController>
@@ -53,7 +93,19 @@
                     <view key="view" contentMode="scaleToFill" id="U6G-fm-8S9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pan Gesture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Oh-sU-n3m">
+                                <rect key="frame" x="243" y="28" width="114" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Oh-sU-n3m" firstAttribute="centerX" secondItem="U6G-fm-8S9" secondAttribute="centerX" id="9gl-cx-uiM"/>
+                            <constraint firstItem="6Oh-sU-n3m" firstAttribute="top" secondItem="k2n-7x-nHs" secondAttribute="bottom" constant="8" id="L2y-m2-WwA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pan" image="first" id="u0i-oO-pAY"/>
                 </viewController>
@@ -72,7 +124,19 @@
                     <view key="view" contentMode="scaleToFill" id="rI4-RT-XGX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinch Gesture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XT5-PD-CFe">
+                                <rect key="frame" x="235" y="28" width="130" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XT5-PD-CFe" firstAttribute="top" secondItem="xth-Vb-ueI" secondAttribute="bottom" constant="8" id="XxG-el-2Yn"/>
+                            <constraint firstItem="XT5-PD-CFe" firstAttribute="centerX" secondItem="rI4-RT-XGX" secondAttribute="centerX" id="lwq-hS-jO6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pinch" image="first" id="pbT-ZU-qwr"/>
                 </viewController>
@@ -91,7 +155,22 @@
                     <view key="view" contentMode="scaleToFill" id="Ii0-Zb-Gt9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotate Gesture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tq7-S3-RiL">
+                                <rect key="frame" x="230" y="28" width="140" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="G89-7z-A3H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Tq7-S3-RiL" secondAttribute="centerX" id="lv1-5x-uWN"/>
+                            <constraint firstItem="Tq7-S3-RiL" firstAttribute="top" secondItem="7Rw-yF-vUq" secondAttribute="bottom" constant="8" symbolic="YES" id="pNs-WE-NTz"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rotate" image="first" id="q6b-TN-0sq"/>
                 </viewController>

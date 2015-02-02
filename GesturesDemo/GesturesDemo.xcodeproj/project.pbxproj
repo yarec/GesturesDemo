@@ -85,9 +85,9 @@
 		77F51E851A80057400DEB348 /* GesturesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				77F51E8E1A80057400DEB348 /* Main.storyboard */,
 				77F51EAA1A8006A700DEB348 /* TabViewController.swift */,
 				77F51EAC1A8006F700DEB348 /* SwipeViewController.swift */,
-				77F51E8E1A80057400DEB348 /* Main.storyboard */,
 				77F51EAE1A80071400DEB348 /* PanViewController.swift */,
 				77F51EB01A80073600DEB348 /* PinchViewController.swift */,
 				77F51EB21A80074700DEB348 /* RotateViewController.swift */,
