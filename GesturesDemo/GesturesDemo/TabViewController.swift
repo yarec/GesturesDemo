@@ -46,7 +46,7 @@ class TabViewController: UIViewController
     
     func handleDoubleTapGesture(tapGestureRecognizer:UITapGestureRecognizer) -> Void {
         var newSize = CGSizeMake(200.0, 200.0)
-        if  testView.frame.size == newSize
+        if  testView.frame.size == newSize || testView.frame.size == CGSizeMake(300.0, 200.0)
         {
             newSize.height = 300.0
             newSize.width = 300.0
