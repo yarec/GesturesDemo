@@ -14,6 +14,7 @@ class PinchViewController: UIViewController {
     @IBOutlet var testView:UIView!
     
     override func viewDidLoad() {
+        /// Tab Changing Swipe Gestures
         var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
         leftSwipeGesture.direction = UISwipeGestureRecognizerDirection.Left
         view.addGestureRecognizer(leftSwipeGesture)

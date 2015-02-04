@@ -14,6 +14,10 @@ class TabViewController: UIViewController
     @IBOutlet var testView:UIView!
     
     override func viewDidLoad() {
+        
+        testView.center = self.view.center
+        
+        /// Tab Changing Swipe Gestures
         var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
         leftSwipeGesture.direction = UISwipeGestureRecognizerDirection.Left
         view.addGestureRecognizer(leftSwipeGesture)
@@ -22,6 +26,7 @@ class TabViewController: UIViewController
         rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
         view.addGestureRecognizer(rightSwipeGesture)
         
+        /// Tap Gestures
         var tapGesture = UITapGestureRecognizer(target: self, action: "handleSingleTapGesture:")
         testView.addGestureRecognizer(tapGesture)
         

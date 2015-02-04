@@ -14,6 +14,7 @@ class PanViewController: UIViewController {
     @IBOutlet var testView:UIView!
     
     override func viewDidLoad() {
+        /// Tab Changing Swipe Gestures
         var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
         leftSwipeGesture.direction = UISwipeGestureRecognizerDirection.Left
         view.addGestureRecognizer(leftSwipeGesture)
@@ -21,7 +22,6 @@ class PanViewController: UIViewController {
         var rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
         rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
         view.addGestureRecognizer(rightSwipeGesture)
-        
         
         
     }
