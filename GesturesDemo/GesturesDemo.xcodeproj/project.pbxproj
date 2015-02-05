@@ -88,8 +88,8 @@
 				77F51E8E1A80057400DEB348 /* Main.storyboard */,
 				77F51EAA1A8006A700DEB348 /* TabViewController.swift */,
 				77F51EAC1A8006F700DEB348 /* SwipeViewController.swift */,
-				77F51EAE1A80071400DEB348 /* PanViewController.swift */,
 				77F51EB01A80073600DEB348 /* PinchViewController.swift */,
+				77F51EAE1A80071400DEB348 /* PanViewController.swift */,
 				77F51EB21A80074700DEB348 /* RotateViewController.swift */,
 				77F51E861A80057400DEB348 /* Supporting Files */,
 			);
@@ -423,6 +423,7 @@
 				77F51EA61A80057400DEB348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77F51EA71A80057400DEB348 /* Build configuration list for PBXNativeTarget "GesturesDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				77F51EA91A80057400DEB348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
