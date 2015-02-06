@@ -23,8 +23,14 @@ class PinchViewController: UIViewController {
         rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
         view.addGestureRecognizer(rightSwipeGesture)
         
+        var pinchGesture = UIPinchGestureRecognizer(target: self, action: "handlePinchWithGestureRecognizer:")
+        testView.addGestureRecognizer(pinchGesture)
         
-        
+    }
+    
+    func handlePinchWithGestureRecognizer(gestureRecognizer: UIPinchGestureRecognizer) -> Void {
+        self.testView.transform = CGAffineTransformScale(self.testView.transform, gestureRecognizer.scale, gestureRecognizer.scale)
+        gestureRecognizer.scale = 1.0;
     }
     
     func jumpToOtherTab(gestureRecognizer: UISwipeGestureRecognizer) -> Void {

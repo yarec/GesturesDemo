@@ -204,6 +204,9 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pinch" image="first" id="pbT-ZU-qwr"/>
+                    <connections>
+                        <outlet property="testView" destination="qRo-vi-ff0" id="nco-Bd-Ofs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHm-35-pff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
