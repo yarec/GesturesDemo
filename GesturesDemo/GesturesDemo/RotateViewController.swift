@@ -9,7 +9,7 @@
 import UIKit
 
 class RotateViewController: UIViewController {
-
+    
     
     @IBOutlet var testView:UIView!
     
@@ -23,8 +23,15 @@ class RotateViewController: UIViewController {
         rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
         view.addGestureRecognizer(rightSwipeGesture)
         
+        var rotateGesture = UIRotationGestureRecognizer(target: self, action: "handleRotationWithGestureRecognizer:")
+        self.testView.addGestureRecognizer(rotateGesture)
         
+    }
+    
+    func handleRotationWithGestureRecognizer(gestureRecognizer: UIRotationGestureRecognizer) -> Void {
+        self.testView.transform = CGAffineTransformRotate(self.testView.transform, gestureRecognizer.rotation)
         
+        gestureRecognizer.rotation = 0.0;
     }
     
     func jumpToOtherTab(gestureRecognizer: UISwipeGestureRecognizer) -> Void {

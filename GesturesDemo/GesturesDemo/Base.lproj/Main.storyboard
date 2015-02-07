@@ -29,7 +29,7 @@
                                 <rect key="frame" x="16" y="200" width="200" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="300" width="200" height="200"/>
+                                    <rect key="frame" x="61" y="145" width="200" height="200"/>
                                 </variation>
                             </view>
                         </subviews>
@@ -227,7 +227,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="76" width="175" height="175"/>
+                                    <rect key="frame" x="90" y="145" width="175" height="175"/>
                                 </variation>
                             </view>
                         </subviews>
@@ -277,18 +277,38 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n75-cT-t6K">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="95" y="145" width="175" height="175"/>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Tq7-S3-RiL" secondAttribute="centerX" id="lv1-5x-uWN"/>
                             <constraint firstItem="Tq7-S3-RiL" firstAttribute="top" secondItem="7Rw-yF-vUq" secondAttribute="bottom" constant="8" symbolic="YES" id="pNs-WE-NTz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="n75-cT-t6K"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="n75-cT-t6K"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rotate" image="first" id="q6b-TN-0sq"/>
+                    <connections>
+                        <outlet property="testView" destination="n75-cT-t6K" id="bKW-AJ-nXb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wRu-sM-uiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="1696"/>
+            <point key="canvasLocation" x="889.5" y="1683.75"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
