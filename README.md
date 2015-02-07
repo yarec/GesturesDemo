@@ -6,10 +6,10 @@ A gesture recognizer is actually an object of the abstract class UIGestureRecogn
 ##Applicatin UI:
 
 ####Tap Gesture:
-![Bilal ARSLAN](https://github.com/ArslanBilal/GesturesDemo/raw/master/GIFs/double_tap.gif)
+![Bilal ARSLAN](https://github.com/ArslanBilal/GesturesDemo/raw/master/GIFs/tap.gif)
 
 ####Double Tap with two finger Gesture:
-![Bilal ARSLAN](https://github.com/ArslanBilal/GesturesDemo/raw/master/GIFs/tap.gif)
+![Bilal ARSLAN](https://github.com/ArslanBilal/GesturesDemo/raw/master/GIFs/double_tap.gif)
 
 ####Swipe Gesture:
 ![Bilal ARSLAN](https://github.com/ArslanBilal/GesturesDemo/raw/master/GIFs/swipe.gif)
