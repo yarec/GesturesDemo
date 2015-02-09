@@ -35,14 +35,14 @@ class SwipeViewController: UIViewController {
 //        //self.view.addSubview(greenView)
         
         
-        /// Tab Changing Swipe Gestures
-        var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
-        leftSwipeGesture.direction = UISwipeGestureRecognizerDirection.Left
-        view.addGestureRecognizer(leftSwipeGesture)
-        
-        var rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
-        rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
-        view.addGestureRecognizer(rightSwipeGesture)
+//        /// Tab Changing Swipe Gestures
+//        var leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
+//        leftSwipeGesture.direction = UISwipeGestureRecognizerDirection.Left
+//        view.addGestureRecognizer(leftSwipeGesture)
+//        
+//        var rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: "jumpToOtherTab:")
+//        rightSwipeGesture.direction = UISwipeGestureRecognizerDirection.Right
+//        view.addGestureRecognizer(rightSwipeGesture)
         
         orangeView.frame.origin.x = 0
         blackView.frame.origin.x = self.view.frame.width
@@ -77,29 +77,29 @@ class SwipeViewController: UIViewController {
     
     func slideToLeftWithGestureRecognizer(gestureRcognizer: UIGestureRecognizer) -> Void {
         UIView.animateWithDuration(0.5, animations: {
-            self.orangeView.frame = CGRectOffset(self.orangeView.frame, -200.0, 0.0)
-            self.blackView.frame = CGRectOffset(self.blackView.frame, -200.0, 0.0)
-            self.greenView.frame = CGRectOffset(self.greenView.frame, -200.0, 0.0)
+            self.orangeView.frame = CGRectOffset(self.orangeView.frame, -self.view.frame.width, 0.0)
+            self.blackView.frame = CGRectOffset(self.blackView.frame, -self.view.frame.width, 0.0)
+            self.greenView.frame = CGRectOffset(self.greenView.frame, -self.view.frame.width, 0.0)
         })
     }
 
     
     func slideToRightWithGestureRecognizer(gestureRcognizer: UIGestureRecognizer) -> Void {
         UIView.animateWithDuration(0.5, animations: {
-            self.orangeView.frame = CGRectOffset(self.orangeView.frame, 200.0, 0.0)
-            self.blackView.frame = CGRectOffset(self.blackView.frame, 200.0, 0.0)
-            self.greenView.frame = CGRectOffset(self.greenView.frame, 200.0, 0.0)
+            self.orangeView.frame = CGRectOffset(self.orangeView.frame, self.view.frame.width, 0.0)
+            self.blackView.frame = CGRectOffset(self.blackView.frame, self.view.frame.width, 0.0)
+            self.greenView.frame = CGRectOffset(self.greenView.frame, self.view.frame.width, 0.0)
         })
     }
     
-    func jumpToOtherTab(gestureRecognizer: UISwipeGestureRecognizer) -> Void {
-        if gestureRecognizer.direction == UISwipeGestureRecognizerDirection.Left
-        {
-            tabBarController?.selectedIndex = 2
-        }
-        else
-        {
-            tabBarController?.selectedIndex = 0
-        }
-    }
+//    func jumpToOtherTab(gestureRecognizer: UISwipeGestureRecognizer) -> Void {
+//        if gestureRecognizer.direction == UISwipeGestureRecognizerDirection.Left
+//        {
+//            tabBarController?.selectedIndex = 2
+//        }
+//        else
+//        {
+//            tabBarController?.selectedIndex = 0
+//        }
+//    }
 }

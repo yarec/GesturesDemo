@@ -12,8 +12,8 @@ class PanViewController: UIViewController {
 
     
     @IBOutlet var testView:UIView!
-    @IBOutlet var horizontalVelocityLabel:UILabel!
-    @IBOutlet var verticalVelocityLabel:UILabel!
+    //@IBOutlet var horizontalVelocityLabel:UILabel!
+    //@IBOutlet var verticalVelocityLabel:UILabel!
     
     override func viewDidLoad() {
         /// Tab Changing Swipe Gestures
@@ -34,7 +34,7 @@ class PanViewController: UIViewController {
         var location = gestureRecognizer.locationInView(self.view)
         testView.center = location
         
-        var velocity = gestureRecognizer.velocityInView(self.view)
+//        var velocity = gestureRecognizer.velocityInView(self.view)
 //        self.verticalVelocityLabel.text = "Vertical Velocity:\(Float(velocity.y)) points/sec"
 //        self.horizontalVelocityLabel.text = "Horizontal Velocity:\(Float(velocity.x)) points/sec"
         
