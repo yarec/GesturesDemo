@@ -12,6 +12,7 @@ class PinchViewController: UIViewController {
 
     
     @IBOutlet var testView:UIView!
+    @IBOutlet var label: UILabel!
     
     override func viewDidLoad() {
         /// Tab Changing Swipe Gestures
@@ -29,6 +30,7 @@ class PinchViewController: UIViewController {
     }
     
     func handlePinchWithGestureRecognizer(gestureRecognizer: UIPinchGestureRecognizer) -> Void {
+        self.view.bringSubviewToFront(label)
         self.testView.transform = CGAffineTransformScale(self.testView.transform, gestureRecognizer.scale, gestureRecognizer.scale)
         gestureRecognizer.scale = 1.0;
     }

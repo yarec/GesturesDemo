@@ -12,6 +12,7 @@ class PanViewController: UIViewController {
 
     
     @IBOutlet var testView:UIView!
+    @IBOutlet var label: UILabel!
     //@IBOutlet var horizontalVelocityLabel:UILabel!
     //@IBOutlet var verticalVelocityLabel:UILabel!
     
@@ -31,6 +32,7 @@ class PanViewController: UIViewController {
     }
     
     func moveViewWithGestureRecognizer(gestureRecognizer: UIPanGestureRecognizer) -> Void {
+        self.view.bringSubviewToFront(label)
         var location = gestureRecognizer.locationInView(self.view)
         testView.center = location
         

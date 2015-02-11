@@ -25,7 +25,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDt-U7-J81">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDt-U7-J81">
                                 <rect key="frame" x="16" y="200" width="200" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -283,6 +283,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Pan" image="first" id="u0i-oO-pAY"/>
                     <connections>
+                        <outlet property="label" destination="6Oh-sU-n3m" id="nZI-Tc-Hj6"/>
                         <outlet property="testView" destination="b8U-25-9Ss" id="4tn-qs-2ye"/>
                     </connections>
                 </viewController>
@@ -357,6 +358,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Pinch" image="first" id="pbT-ZU-qwr"/>
                     <connections>
+                        <outlet property="label" destination="XT5-PD-CFe" id="8B2-Tb-X6Q"/>
                         <outlet property="testView" destination="qRo-vi-ff0" id="nco-Bd-Ofs"/>
                     </connections>
                 </viewController>
